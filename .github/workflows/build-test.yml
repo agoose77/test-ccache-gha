@@ -34,3 +34,7 @@ jobs:
       run: which gcc
     - name: Find g++
       run: which g++
+    - name: Find ccache
+      run: which ccache
+    - name: View ccache
+      run: ls /usr/lib/ccache
