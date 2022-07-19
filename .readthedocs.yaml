@@ -7,6 +7,5 @@ build:
 
   commands:
     - env | cut -d= -f1
-    - ls -lah 
     - mkdir -p _readthedocs/html
-    - echo "HELLO WORLD" > _readthedocs/html
+    - echo "HELLO WORLD" > _readthedocs/html/index.html
