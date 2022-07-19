@@ -8,10 +8,11 @@ on:
     types: [released]
 
 jobs:
-  "test-${{ github.event_name }}":
+  test:
     runs-on: ubuntu-18.04
     steps:
-        - uses: actions/checkout@v3
+        - name: checkout for "test-${{ github.event_name }}"
+          uses: actions/checkout@v3
           with:
             submodules: true
         - name: Print head_ref
