@@ -2,6 +2,10 @@ name: Docs
 on:
   pull_request:
   push:
+    branches:
+        - main
+  release:
+    types: [released]
 
 jobs:
   Sphinx:
