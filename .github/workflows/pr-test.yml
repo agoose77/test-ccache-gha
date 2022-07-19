@@ -1,8 +1,7 @@
 name: Docs
 on:
-  pull_request:
-  branch:
-
+  pull_request: 
+  workflow_dispatch:
 jobs:
   Sphinx:
     runs-on: ubuntu-18.04
