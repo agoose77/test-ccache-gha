@@ -1,6 +1,6 @@
 name: Docs
 on:
-  #pull_request:
+  pull_request:
   push:
   release:
     types: [released]
