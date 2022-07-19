@@ -1,0 +1,13 @@
+name: Docs
+on:
+  pull_request:
+
+jobs:
+  Sphinx:
+    runs-on: ubuntu-18.04
+    steps:
+        - uses: actions/checkout@v3
+          with:
+            submodules: true
+        - name: Print branch
+          run: echo "${{ github.event.pull_request.head.ref }}"
