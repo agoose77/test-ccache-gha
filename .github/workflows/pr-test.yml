@@ -9,5 +9,9 @@ jobs:
         - uses: actions/checkout@v3
           with:
             submodules: true
-        - name: Print branch
-          run: echo "${{ github.event.pull_request.head.ref }}"
+        - name: Print head_ref
+          run: echo "${{ github.head_ref }}"
+        - name: Print ref
+          run: echo "${{ github.ref }}"
+        - name: Print ref
+          run: echo "${{ github.head_ref || github.ref }}"
