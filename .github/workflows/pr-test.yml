@@ -2,16 +2,15 @@ name: Docs
 on:
   pull_request:
   push:
-    branches:
-        - main
   release:
     types: [released]
 
 jobs:
-  Sphinx:
+  test:
     runs-on: ubuntu-18.04
     steps:
-        - uses: actions/checkout@v3
+        - name: checkout for "test-${{ github.event_name }}"
+          uses: actions/checkout@v3
           with:
             submodules: true
         - name: Print head_ref
