@@ -5,6 +5,7 @@ dependencies:
   - pip
   - cxx-compiler
   - root
+  - python=3.10.6
   - pip:
     # [[[cog
     # import cog
